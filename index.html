@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Intro to Angular</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <h1>Angular Click App</h1>
+    <p ng-controller="MyController">
+      You've clicked {{clicks}} times.
+      <button ng-click="click()">click me</button>
+    </p>
+    <p ng-controller="MyController">
+      You've clicked {{clicks}} times.
+      <button ng-click="click()">click me</button>
+    </p>
+
+    <div ng-controller="MyController">
+      <p>
+        You've clicked {{clicks}} times.
+        <button ng-click="click()">click me</button>
+      </p>
+      <p>
+        You've clicked {{clicks}} times.
+        <button ng-click="click()">click me</button>
+      </p>
+    </div>
+  </body>
+</html>
